@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Love Story</title>
+<style>
+/* 背景动画 */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #ff9ad0, #dfc4fa, #f8c2fb, #a1fdf8);
+    background-size: 400% 400%;
+    animation: gradient 12s ease infinite;
+    color: rgb(74, 15, 111);
+}
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* 时间线样式 */
+.timeline {
+    width: 80%;
+    margin: 50px auto;
+    position: relative;
+}
+.story {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+}
+.story.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 1.1em;
+}
+
+/* 翻页按钮 */
+.nav-buttons {
+    text-align: center;
+    margin-top: 40px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 0 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: rgba(255,255,255,0.3);
+    color: white;
+    transition: 0.3s;
+}
+button:hover {
+    background: rgba(255,255,255,0.6);
+}
+
+/* 让图片一排三列 */
+.story img {
+    width: 30%;            /* 宽度大约三分之一 */
+    margin: 1%;            /* 图片之间留空隙 */
+    border-radius: 8px;    /* 圆角美观 */
+    object-fit: cover;     /* 裁剪溢出部分 */
+}
+.story {
+    display: flex;
+    flex-wrap: wrap;       /* 自动换行 */
+    gap: 5px;              /* 图片之间的间距 */
+}
+.story p, .story h2 {
+    flex: 0 0 100%;        /* 确保文字独占一行 */
+}
+
+</style>
+</head>
+<body>
+
+<div class="timeline">
+    <div class="story">
+        <h2>💌 2025-06-14 The First Time We Met</h2>
+        <p>You brought my favourite flower, sooooo pretty I really like it!</p>
+        <img src="img/1.jpeg">
+        <p>We go eat the bagels I said were delicious~ And you laugh at me😤</p>
+        <img src="img/2.jpeg">
+        <p>Then we went to the National Gallery together and took our first photo together,so funny hahaha.</p>
+        <img src="img/3.jpeg">
+        <img src="img/3.1.jpeg">
+        <p>We went to TRX jalan-jalan, take some photo.</p>
+        <img src="img/4.jpeg">
+        <img src="img/4.1.jpeg">
+        <p>The first movie we watched together.</p>
+        <img src="img/5.jpeg">
+        <p>I bought a Skullpanda from Popmart for you and me.So we can match hehe </p>
+        <img src="img/6.jpeg">
+        <p>Then we went to dinner and you took pictures of me.</p>
+        <img src="img/7.jpeg">
+        <p>Finally, we went to KL Tower, and it was interesting to see it with you.</p>
+        <img src="img/8.jpeg">
+        <p>I was really happy that day, and I was afraid that I was not good enough and you would feel boring.</p>
+
+    </div>
+    <div class="story">
+        <h2> 2025-06-21 On our second date, you held my hand</h2>
+        <p>I'm so surprise, because we both made a bracelet for each other!!</p>
+        <img src="img/9.jpeg">
+        <p>We went to Immersify together, it was very nice, you too❤️</p>
+        <img src="img/10.jpeg">
+        <img src="img/10.1.jpeg">
+        <p>After that we went to the aquarium and saw lots of fish and animals</p>
+        <img src="img/11.jpeg">
+        <img src="img/11.1.jpeg">
+        <p>We went to Ilham Gallery to see the art, and you took a picture of me also. And I haven't post it.</p>
+        <img src="img/12.jpeg">
+         <img src="img/12.1.jpeg">
+         <img src="img/12.2.jpeg">
+        <p>Finally, I took you to Kepong to eat Taiwanese food, then we go park walk walk~ A happy day ended</p>
+        <img src="img/13.jpeg">
+</div>
+
+<div class="story">
+        <h2> 2025-06-22 Third date</h2>
+        <p>We went to the museum, and it was a coincidence that we were both wearing white</p>
+        <img src="img/14.jpeg">
+        <img src="img/14.1.jpeg">
+        <p>After that we went to UR-MU Gallery to see the paintings.</p>
+        <img src="img/15.jpeg">
+        <p>Then we went to Gamuda Garden for dinner and held hand walk around, and saw a lot of dogs</p>
+        <img src="img/16.jpeg">
+        <p>After spending some time in the park, we went to play Skyline Ludge. We also played the pirate ship and the Ferris wheel.</p>
+        <img src="img/17.jpeg">
+        <img src="img/17.1.jpeg">
+        <p>Another happy day ended~ Is it this day i cried when we stayed at ur car?</p>
+        <img src="img/18.jpeg">
+</div>
+
+<div class="story">
+        <h2> 2025-06-25 The first time you came to my house</h2>
+        <p>You and I went to the nightmarket to buy food and eat at my house, you also met my parents hehe.</p>
+        <img src="img/19.jpeg">
+        <p>Then we went to Auggun buy Chagee to drink, and took photos together.</p>
+        <img src="img/20.jpeg">
+        <p>You stayed at my house very late that day and we kissed .</p>
+        <img src="img/21.jpeg">
+</div>
+
+<div class="story">
+        <h2> 2025-06-28 We go Genting together</h2>
+        <p>I took you to my usual kopitiam for breakfast, but your chicken rice wasn't very good, hahaha.</p>
+        <img src="img/22.jpeg">
+        <p>We spent a lot of time queuing for the cable car, so we arrived at Genting a bit late. But we still managed to play some games.</p>
+        <img src="img/23.jpeg">
+        <p>You told me that day that there would be a surprise, and I was indeed surprised. 我爱你!</p>
+        <img src="img/24.jpeg">
+</div>
+
+<div class="story">
+        <h2> 2025-06-29 You came all the way here to watch a movie with meeeee, so sweet.</h2>
+        <img src="img/25.jpeg">
+</div>
+
+<div class="story">
+        <h2> 2025-06-30 I got class...</h2>
+        <p>You drove me to school and sat in class with me, that was a new experience for you!</p>
+        <img src="img/26.jpeg">
+        <p>I originally wanted to bring you to Setapak to eat the mala I love, but no parking. So we went to Kepong to eat.</p>
+        <img src="img/27.jpeg">
+        <p>After eating, we found a park, so we went for a walk. So beautifulllll</p>
+        <img src="img/28.jpeg">
+</div>
+
+<div class="story">
+        <h2> 2025-07-2 Shooting</h2>
+        <p>It's so special to shoot an video with you for the first time!</p>
+        <img src="img/29.jpeg">
+        <p>After I finished my class, you took me to play golf. Actually quite interesting and I wanna play with you hehe</p>
+        <img src="img/30.jpeg">
+</div>
+
+<div class="story">
+        <h2> 2025-07-9 Zoo Negaraaaaaaa</h2>
+        <p>We went to see many many animal, and they were all so cute!</p>
+        <img src="img/31.jpeg">
+        <p>It's all my fault. I asked you to buy the ticket online at that time, but didn't pay attention to when it can be use. So you paid for two time...😭</p>
+        <p>After that, we went to Hanam BBQ, which was really delicioussss!!</p>
+        <img src="img/32.jpeg">
+</div>
+
+<div class="story">
+        <h2> 2025-7-12 The day before my birthday</h2>
+        <p>You had an early birthday dinner with me.</p>
+        <img src="img/33.jpeg">
+        <p>And you prepared a surprise for me, I love you so muchhhhhh</p>
+        <img src="img/34.jpeg">
+</div>
+
+<div class="story">
+        <h2> 2025-7-13 My birthday</h2>
+        <p>Today is my birthday, and you and my family are celebrating my birthday together. I'm so happy that I can celebrate my bd with people I love.</p>
+        <img src="img/35.jpeg">
+        <p>You also helped me take photos, but some of them were really...</p>
+        <img src="img/36.jpeg">
+</div>
+
+<div class="story">
+        <h2> 2025-7-17 The day before you left Malaysia🥹</h2>
+        <p>I really really can't bear to see you leave, so I prepared some letters for you and gave my Grizzy to 陪你.</p>
+        <img src="img/37.jpeg">
+        <img src="img/37.1.jpeg">
+        <p>Actually, I don't like long-distance relationships, but if that person is you, I'm willing to.</p>
+</div>
+
+<div class="story">
+        <h2> 2025-7-18 The day you left Malaysiaaa</h2>
+        <p>You are leaving Malaysia, and you are leaving me also. I really wanted to cry that day, but I held it back. A year may pass quickly.</p>
+        <img src="img/38.jpeg">
+        <p>But now I feel one year is soooooooo long</p>
+</div>
+
+<div class="story">
+        <h2> This is the last page</h2>
+        <p>Thank you for reading patiently~</p>
+        <p> Baby.This year's Qixi Festival, we are not in the same place, nor can we hold hands and go shopping like other couples, eat desserts 
+            together, and take a bunch of silly photos. You are in Australia, and I am in Malaysia, separated by the sea and time, but do you 
+            know that none of these have made my heart farther away from you.I often think that if I had the ability to teleport now, I would 
+            definitely run to you without hesitation, throw myself into your arms, feel your real temperature, and make up for the thoughts 
+            of this period of time at once. Even if we just sit on the sofa and watch a movie together or do nothing, I feel very happy.We all 
+            know that LDR are not easy. Sometimes you are busy with your things, and I am busy with mine. The time difference makes our chat not 
+            always so smooth, sometimes I miss you so muchn that I can't sleep, and I want to send a message, but I'm afraid to disturb your rest. 
+            But I found that loving someone is very wonderful, even if it is hard, even if it is a little wrong, the heart will still be filled 
+            with warmth, because I know that the person is you.During the days you were in Australia, I imagine what you were doing. When you were
+            walking down the street and a breeze blew by, would you squint your eyes? When you were eating, would you think that the dish would 
+            taste better if I were there? When you saw beautiful scenery, would you secretly hope that I could be by your side to see it together? 
+            Did you eat well? Did you sleep well? Did you look at other beautiful girls? We are far apart, but the moon we look up to is the 
+            same. Just like our hearts, no matter how far apart we are, we will still get closer to each other and attract each other.I was 
+            thinking that when we meet next time, I will hug you for a long time and tell you how much I miss you during this period; I will 
+            take you to eat what you like to eat and what I like to eat, go to the places we want to go, and take a lot of photos to make up 
+            for all the missed days.I hope we can spend every festival together in the future not only Qixi Festival, without time differences, 
+            without the screen. We can walk hand in hand on the street, we can lean together to watch movies, and we can say to you at the end 
+            of the day, "Baby, happy xxx." But before that day comes, please accept all my love, all my thoughts, and all my heartbeats.Take good 
+            care of yourself over there. I will also work hard to live my life here. We will soon be in the same place to welcome our every festival.
+            I love you, so far away but so close. </p>
+        
+</div>
+</div>
+
+<div class="nav-buttons">
+    <button onclick="prevStory()">⬅ Last Page</button>
+    <button onclick="nextStory()">Next Page ➡</button>
+</div>
+
+<script>
+// 滚动动画
+const stories = document.querySelectorAll('.story');
+function checkStories() {
+    const triggerBottom = window.innerHeight * 0.8;
+    stories.forEach(story => {
+        const storyTop = story.getBoundingClientRect().top;
+        if(storyTop < triggerBottom){
+            story.classList.add('show');
+        }
+    });
+}
+window.addEventListener('scroll', checkStories);
+checkStories();
+
+// 翻页功能
+let currentIndex = 0;
+function showStory(index) {
+    stories.forEach((story, i) => {
+        story.style.display = (i === index) ? 'block' : 'none';
+    });
+}
+function nextStory() {
+    currentIndex = (currentIndex + 1) % stories.length;
+    showStory(currentIndex);
+}
+function prevStory() {
+    currentIndex = (currentIndex - 1 + stories.length) % stories.length;
+    showStory(currentIndex);
+}
+// 初始只显示第一条
+showStory(currentIndex);
+</script>
+
+</body>
+</html>

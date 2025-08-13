@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Love Story</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe Script', cursive;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: bgAnimation 10s ease infinite;
+        background: linear-gradient(45deg, #ff9ae4, #dfc4fa, #a1c4fd, #c2e9fb);
+        background-size: 400% 400%;
+        color: white;
+        text-align: center;
+    }
+
+    @keyframes bgAnimation {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-bottom: 0.2em;
+    }
+
+    p {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    #days {
+        font-size: 2em;
+        font-weight: bold;
+        color: #ffe8f0;
+        margin-bottom: 1.5em;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 1.2em;
+        background-color: rgba(255, 255, 255, 0.3);
+        border: none;
+        border-radius: 30px;
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        transform: scale(1.05);
+    }
+</style>
+</head>
+<body>
+
+    <h1>Happy Chinese Valentine's Day ❤️</h1>
+    <p>Every moment with you is a treasure</p>
+    <div id="days"></div>
+    <button class="btn" onclick="window.location.href='story.html'">Read Our Story</button>
+
+<script>
+    // 在一起的日期（年, 月-1, 日）
+    const startDate = new Date(2025, 5, 28); // 例如 2022年1月1日
+    const today = new Date();
+    const diffTime = today - startDate;
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    document.getElementById('days').textContent = `We have been together for ${diffDays} days 💖`;
+</script>
+
+</body>
+</html>
